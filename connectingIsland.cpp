@@ -8,7 +8,6 @@
 
 using namespace std;
 
-int num;
 bool visit[101];
 vector<pair<int, int> > path[101];
 
@@ -21,8 +20,8 @@ int prim(int start){
         int nextCost = path[start][i].second;
         pq.push(pair<int, int>(nextCost, next));
     }
-    
     int answer = 0;
+
     while (!pq.empty()){
         int cur = pq.top().second;
         int curCost = pq.top().first;
@@ -45,15 +44,14 @@ int prim(int start){
 
 int solution(int n, vector<vector<int> > costs) {
     int answer = 0;
-    num = n;
 
-    for(int i=0; i<(int)costs.size(); i++){
+    for(int i = 0; i < (int)costs.size(); i++){
         int from = costs[i][0];
         int to = costs[i][1];
         int value = costs[i][2];
         path[from].push_back(pair<int, int>(to, value));
         path[to].push_back(pair<int, int>(from, value));
     }
-    
+
     return prim(0);
 }
