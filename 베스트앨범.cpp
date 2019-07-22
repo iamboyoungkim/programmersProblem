@@ -58,7 +58,7 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
     
     for(int i=0; i<tmp.size(); i++){
         for(int j=0; j<plays2.size(); j++){
-            if(tmp2[i].compare(genres2[j]) == 0 && max==plays2[j] && max2 < max){
+            if(tmp2[i].compare(genres2[j]) == 0 && max == plays2[j] && max2 < max){
                 max2 = max;
                 cnt[1] = j;
             }
