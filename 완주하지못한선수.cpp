@@ -11,6 +11,7 @@ string solution(vector<string> participant, vector<string> completion) {
 	for (string name: participant) {
 		++participants[name];
 	}
+	
 	for (string name: completion) {
 		--participants[name];
 	}
