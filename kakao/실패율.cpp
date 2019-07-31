@@ -10,7 +10,7 @@ struct ResSet {
     double rate;
 };
 
-// 실패율 큰것부터
+// 실패율 큰것부터 정렬
 bool comp(ResSet a, ResSet b) {
     return a.rate < b.rate;
 }
@@ -42,7 +42,7 @@ vector<int> solution(int N, vector<int> stages) {
     for (int i = 0; i<N; i++) {
         res.push_back({i+1, (double)pass[i]/fail[i]});
     }
-    stable_sort(res.begin(), res.end(), comp);
+    stable_sort(res.begin(), res.end(), comp); //sort와 다르게 순서를 유지하면서 정렬
     
     for (int i = 0; i<N; i++) {
         answer.push_back(res[i].num);
