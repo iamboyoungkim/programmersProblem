@@ -1,3 +1,6 @@
+// 유형 : 해시
+// 다시풀어보기
+
 #include <string>
 #include <vector>
 #include <iostream>

@@ -1,3 +1,5 @@
+// 유형 : 정렬
+
 #include <string>
 #include <vector>
 #include <algorithm>

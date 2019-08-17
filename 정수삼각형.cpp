@@ -1,3 +1,5 @@
+// 유형 : dp
+
 #include <string>
 #include <vector>
 #include <algorithm>

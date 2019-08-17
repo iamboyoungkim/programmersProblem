@@ -1,10 +1,12 @@
+// 유형 : 정렬
+
 #include <string>
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
-vector<int> solution(vector<int> array, vector<vector<int>> commands) {
+vector<int> solution(vector<int> array, vector<vector<int> > commands) {
     vector<int> answer;
     
     for(auto x: commands){

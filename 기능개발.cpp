@@ -1,3 +1,5 @@
+// 유형 : 스택/큐
+
 #include <string>
 #include <vector>
 

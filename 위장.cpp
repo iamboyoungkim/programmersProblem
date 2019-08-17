@@ -1,10 +1,12 @@
+// 유형 : 해시
+
 #include <string>
 #include <vector>
 #include <unordered_map>
 
 using namespace std;
 
-int solution(vector<vector<string>> clothes) {
+int solution(vector<vector<string> > clothes) {
     int answer = 1;
     unordered_map<string, int> um;
 

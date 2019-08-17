@@ -1,3 +1,5 @@
+// 유형 : 완전탐색
+
 #include <string>
 #include <vector>
 #include <iostream>

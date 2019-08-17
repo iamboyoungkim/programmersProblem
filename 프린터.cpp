@@ -1,3 +1,5 @@
+// 유형 : 스택/큐
+
 #include <string>
 #include <vector>
 #include <queue>
@@ -6,7 +8,7 @@ using namespace std;
 
 int solution(vector<int> priorities, int location) {
     int answer = 0;
-    queue<pair<int, int>> q;
+    queue<pair<int, int> > q;
     priority_queue<int> pq;
     int size = priorities.size();
     for (int i = 0; i < size; i++) {

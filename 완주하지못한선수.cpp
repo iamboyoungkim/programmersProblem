@@ -1,3 +1,5 @@
+// 유형 : 해시
+
 #include <string>
 #include <vector>
 #include <algorithm>
