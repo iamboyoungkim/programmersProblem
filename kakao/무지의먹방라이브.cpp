@@ -12,7 +12,7 @@ bool cmp(pair<int, int> p1, pair<int, int> p2) {
 int solution(vector<int> food_times, long long k) {
     int answer = -1;
     int size = food_times.size();
-    vector<pair<int, int>> food;
+    vector<pair<int, int> > food;
     
     for (int i = 0; i<size; i++) {
         food.push_back({food_times[i], i+1}); // 시간, 번호
@@ -38,7 +38,7 @@ int solution(vector<int> food_times, long long k) {
     
         int cnt = size - i;
         return food[i + (k%cnt)].second;
-        
     }
+    
     return answer;
 }
