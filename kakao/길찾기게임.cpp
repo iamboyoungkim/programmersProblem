@@ -55,7 +55,7 @@ vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
             if (iterator-> x > nodeinfo[i][0]) {
                 if (iterator->left == NULL) {
                     iterator->left = new Tree{nodeinfo[i][0], nodeinfo[i][1], nodeinfo[i][2], NULL, NULL};
-                break;
+                    break;
                 }
                 else iterator = iterator -> left;
             }
@@ -63,7 +63,7 @@ vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
             else {
                 if (iterator->right == NULL) {
                     iterator->right = new Tree{nodeinfo[i][0], nodeinfo[i][1], nodeinfo[i][2], NULL, NULL};
-                break;
+                    break;
                 }
                 else iterator = iterator -> right;
             }
