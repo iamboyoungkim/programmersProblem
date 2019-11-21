@@ -6,8 +6,6 @@
 
 using namespace std;
 
-// 석호님 코드 참고해서 고쳤습니당
-
 vector<string> solution(vector<string> record) {
     vector<string> answer;
     map<string, string> userInfo; // uid, nickname

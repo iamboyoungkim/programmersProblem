@@ -23,6 +23,7 @@ def solution(relation):
             if check(relation, n, rows):
                 lst.append(set(n))
 
+    # 유일성
     for l1 in lst[:]:
         for l2 in lst[:]:
             if l1 == l1 & l2:

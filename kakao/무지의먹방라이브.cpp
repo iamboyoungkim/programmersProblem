@@ -5,8 +5,9 @@
 
 using namespace std;
 
+// 오름차순
 bool cmp(pair<int, int> p1, pair<int, int> p2) {
-    return p1.second < p2.second; // 번호 작은순
+    return p1.second < p2.second;
 }
 
 int solution(vector<int> food_times, long long k) {
