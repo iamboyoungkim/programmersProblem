@@ -4,6 +4,8 @@
         "vector": "cpp",
         "string": "cpp",
         "unordered_map": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "filesystem": "cpp",
+        "iosfwd": "cpp"
     }
 }

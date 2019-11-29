@@ -13,7 +13,7 @@ int solution(string begin, string target, vector<string> words) {
     bool check = false;
 
     for (int i = 0; i<words.size(); i++) {
-        if (target == words[o]) {
+        if (target == words[i]) {
             check = true;
             break;
         }
